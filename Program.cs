@@ -16,7 +16,7 @@ namespace csharp_banca_oop
             MontePaschi.ModificaCliente("Carlo");
             MontePaschi.RimuoviCliente("SPGGLI96H29G713C");
 
-            MontePaschi.AggiungiPrestito(cliente, 2000, 4, DateTime.Now, "21/02/2030");
+            MontePaschi.AggiungiPrestito(cliente, 2000, 4, DateTime.Now, new DateTime(12/05/2030));
 
         }
     }

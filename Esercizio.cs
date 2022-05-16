@@ -125,7 +125,7 @@ namespace csharp_banca_oop
             Console.WriteLine(mioCliente.CodiceFCliente);
 
         }
-        public void AggiungiPrestito(Cliente Intestatario, double AmmontarePrestito, double RataPrestito, DateTime DataInizio, string DataFine)
+        public void AggiungiPrestito(Cliente Intestatario, double AmmontarePrestito, double RataPrestito, DateTime DataInizio, DateTime DataFine)
         {
             Prestito nuovoPrestito = new Prestito();
             nuovoPrestito.Intestatario = Intestatario;
@@ -134,11 +134,6 @@ namespace csharp_banca_oop
             nuovoPrestito.DataInizio = DataInizio;
             nuovoPrestito.DataFine = DataFine;
             listaPrestiti.Add(nuovoPrestito);
-        }
-        public int DataFineRata(double ammontareRata, int rate)
-        {
-            int mesiDurataRata;
-          return  mesiDurataRata= (int)ammontareRata / rate;
         }
 
     }
@@ -186,7 +181,7 @@ namespace csharp_banca_oop
         public double AmmontarePrestito { get; set; }
         public double RataPrestito { get; set; }
         public DateTime DataInizio { get; set; }
-        public string DataFine { get; set; }
+        public DateTime DataFine { get; set; }
 
        
         
